@@ -36,7 +36,7 @@ if [ "$RUN_RHOS_RELEASE" = "1" ]; then
     sudo yum-config-manager --enable rhelosp-rhel-7-server-opt
 # We'll use subscription-manager otherwise
 else
-    sudo subscription-manager repos --enable=rhel-7-server-rpms --enable=rhel-7-server-optional-rpms
+    sudo subscription-manager repos --enable=rhel-7-server-rpms --enable=rhel-7-server-optional-rpms --enable=rhel-7-server-extras-rpms
 fi
 
 # newer openstack-keystone requires python-zope-interface, but that is not
